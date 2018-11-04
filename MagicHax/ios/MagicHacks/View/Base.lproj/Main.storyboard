@@ -456,6 +456,48 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SY2-uA-hmy" id="RgZ-4b-p9N">
                                             <rect key="frame" x="0.0" y="0.0" width="248" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nen-im-NXw">
+                                                    <rect key="frame" x="15" y="9" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYM-gd-eKp">
+                                                    <rect key="frame" x="132" y="3" width="30" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <state key="normal" title="-">
+                                                        <color key="titleColor" red="0.25284003220000001" green="0.92223931349999999" blue="0.82898336130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="minusMagic:" destination="hLg-xq-uze" eventType="touchUpInside" id="W3k-Zx-wcF"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-XB-GyL">
+                                                    <rect key="frame" x="186" y="9" width="10" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0285986075129534" green="0.0285986075129534" blue="0.0285986075129534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qat-m5-jaz">
+                                                    <rect key="frame" x="218" y="3" width="30" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                    <state key="normal" title="+">
+                                                        <color key="titleColor" red="0.25284003220000001" green="0.92223931349999999" blue="0.82898336130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Qat-m5-jaz" firstAttribute="leading" secondItem="2mE-XB-GyL" secondAttribute="trailing" constant="22" id="29D-dY-HKQ"/>
+                                                <constraint firstItem="Qat-m5-jaz" firstAttribute="centerY" secondItem="nen-im-NXw" secondAttribute="centerY" id="68k-3n-jic"/>
+                                                <constraint firstItem="2mE-XB-GyL" firstAttribute="centerY" secondItem="nen-im-NXw" secondAttribute="centerY" id="Jv1-Ab-NRN"/>
+                                                <constraint firstItem="nen-im-NXw" firstAttribute="leading" secondItem="RgZ-4b-p9N" secondAttribute="leading" constant="15" id="Nb9-z9-OBz"/>
+                                                <constraint firstItem="2mE-XB-GyL" firstAttribute="leading" secondItem="nYM-gd-eKp" secondAttribute="trailing" constant="24" id="U71-3Y-5uO"/>
+                                                <constraint firstItem="nYM-gd-eKp" firstAttribute="centerY" secondItem="nen-im-NXw" secondAttribute="centerY" id="itS-84-nZJ"/>
+                                                <constraint firstItem="nen-im-NXw" firstAttribute="top" secondItem="RgZ-4b-p9N" secondAttribute="top" constant="9" id="tJ5-Gz-k4I"/>
+                                                <constraint firstItem="nYM-gd-eKp" firstAttribute="leading" secondItem="nen-im-NXw" secondAttribute="trailing" constant="75" id="tUz-DM-Fgl"/>
+                                                <constraint firstAttribute="trailing" secondItem="Qat-m5-jaz" secondAttribute="trailing" id="zJT-kK-OeE"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
