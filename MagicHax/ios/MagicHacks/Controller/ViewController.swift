@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBAction func minusMove(_ sender: Any) {
+    }
+    @IBAction func plusMove(_ sender: Any) {
+    }
     @IBAction func minusStatsA(_ sender: Any) {
         
     }

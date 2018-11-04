@@ -37,12 +37,14 @@ enum MoveType {
 }
 
 class Stats {    
+    @IBOutlet var points: UILabel!
     @IBOutlet var statC: UILabel!
     @IBOutlet var statB: UILabel!
     @IBOutlet var statA: NSLayoutConstraint!
 }
 
 class Attributes {
+    @IBOutlet var points: UILabel!
     @IBOutlet var hp: UILabel!
     @IBOutlet var speed: UILabel!    
     @IBOutlet var magic: UILabel!
@@ -51,6 +53,9 @@ class Attributes {
 }
 
 class Moves {
+    @IBOutlet var points: UILabel!
+    @IBOutlet var moveValue: UILabel!
+    @IBOutlet var moveName: UILabel!
     
 }
 

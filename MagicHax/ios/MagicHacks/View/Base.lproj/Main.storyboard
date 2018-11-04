@@ -471,6 +471,7 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="minusMagic:" destination="hLg-xq-uze" eventType="touchUpInside" id="W3k-Zx-wcF"/>
+                                                        <action selector="minusMove:" destination="hLg-xq-uze" eventType="touchUpInside" id="VHB-02-8eX"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mE-XB-GyL">
@@ -485,6 +486,9 @@
                                                     <state key="normal" title="+">
                                                         <color key="titleColor" red="0.25284003220000001" green="0.92223931349999999" blue="0.82898336130000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="plusMove:" destination="hLg-xq-uze" eventType="touchUpInside" id="vFj-Ad-twd"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -499,6 +503,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="Qat-m5-jaz" secondAttribute="trailing" id="zJT-kK-OeE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="moveName" destination="nen-im-NXw" id="vQU-Oc-39f"/>
+                                            <outlet property="moveValue" destination="2mE-XB-GyL" id="Pmw-Gq-Ae9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -660,6 +668,7 @@
                             <outlet property="defense" destination="70p-Q2-PsC" id="uYp-hm-hPR"/>
                             <outlet property="hp" destination="6SA-Cu-fNK" id="rP1-qC-BZ2"/>
                             <outlet property="magic" destination="aoE-E4-lFy" id="hKe-pq-h2C"/>
+                            <outlet property="points" destination="9bF-pR-l3L" id="Jvu-SK-a14"/>
                             <outlet property="speed" destination="D3x-BB-BWb" id="gNi-fg-tIg"/>
                             <outlet property="statA" destination="gnl-Js-Pxq" id="kUo-gF-bHI"/>
                             <outlet property="statB" destination="r5j-C2-QzH" id="how-hZ-HPj"/>
