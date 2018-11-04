@@ -148,8 +148,8 @@
 		F2323A03218E761D00707A19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
 				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
+				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -466,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228X6FPGAD;
-				INFOPLIST_FILE = MagicHacks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MagicHacks/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228X6FPGAD;
-				INFOPLIST_FILE = MagicHacks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MagicHacks/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
