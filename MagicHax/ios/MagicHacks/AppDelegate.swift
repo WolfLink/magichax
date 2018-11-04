@@ -18,7 +18,8 @@ let testnet = GameNetwork()
         // Override point for customization after application launch
         
         // dumb debuggin zon
-        testnet.sendTest()
+        //testnet.sendTest()
+        testnet.postTest()
         
         
         

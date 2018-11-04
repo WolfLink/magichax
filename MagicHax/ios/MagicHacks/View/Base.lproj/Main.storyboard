@@ -18,44 +18,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e3U-wI-8G2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MagicHax" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vet-Ip-CQP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MagicHax" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vet-Ip-CQP">
                                 <rect key="frame" x="118.5" y="106" width="138" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-GD-hWR">
-                                <rect key="frame" x="109" y="376" width="156" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwd-GD-hWR">
+                                <rect key="frame" x="109.5" y="376" width="156" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.40736997810437425" blue="0.64896135891030748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="aZp-aK-OaP"/>
+                                    <constraint firstAttribute="width" constant="156" id="jLV-Je-tkN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Play Game">
                                     <color key="titleColor" red="0.86038101283451274" green="1" blue="0.9896177515161273" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-pX-Dcr">
-                                <rect key="frame" x="109" y="454" width="156" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2k-pX-Dcr">
+                                <rect key="frame" x="109.5" y="454" width="156" height="48"/>
                                 <color key="backgroundColor" red="1" green="0.40736997809999997" blue="0.64896135889999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="3MS-rM-Yvs"/>
+                                    <constraint firstAttribute="width" constant="156" id="4rF-Ac-iAS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
                                 <state key="normal" title="Edit Team">
                                     <color key="titleColor" red="0.86038101280000001" green="1" blue="0.98961775149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GEi-hc-5s5" kind="show" id="mLY-DI-rzA"/>
+                                    <segue destination="GEi-hc-5s5" kind="presentation" id="mLY-DI-rzA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="e3U-wI-8G2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NiY-Ra-eME"/>
-                            <constraint firstItem="e3U-wI-8G2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OwH-eY-YIT"/>
-                            <constraint firstItem="vet-Ip-CQP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T8Q-an-npo"/>
-                            <constraint firstItem="e3U-wI-8G2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WOe-xU-zcK"/>
-                            <constraint firstItem="wwd-GD-hWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBn-Yd-OzE"/>
-                            <constraint firstItem="R2k-pX-Dcr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qZE-2V-tcn"/>
-                            <constraint firstItem="e3U-wI-8G2" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ypM-s8-xW2"/>
+                            <constraint firstItem="R2k-pX-Dcr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8qK-bq-6Vx"/>
+                            <constraint firstItem="vet-Ip-CQP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EjY-nC-SSs"/>
+                            <constraint firstItem="wwd-GD-hWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acY-ke-ea4"/>
+                            <constraint firstItem="R2k-pX-Dcr" firstAttribute="top" secondItem="wwd-GD-hWR" secondAttribute="bottom" constant="30" id="i3I-RV-ENK"/>
+                            <constraint firstItem="vet-Ip-CQP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="qiw-9I-MZi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R2k-pX-Dcr" secondAttribute="bottom" constant="165" id="x9R-z9-nyK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
