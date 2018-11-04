@@ -12,11 +12,15 @@
 		6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD0218E46D900B092A2 /* Main.storyboard */; };
 		6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */; };
 		6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */; };
-		6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFA218E492C00B092A2 /* alexImages1024 */; };
 		6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */; };
 		6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */; };
 		6E2F3E3F218E5A9700B092A2 /* GameplayBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */; };
 		6E2F3E43218E677F00B092A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E42218E677F00B092A2 /* Network.swift */; };
+		F23DBEEC218EA61B004E2D80 /* water_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F23DBEE7218EA61B004E2D80 /* water_icon.svg */; };
+		F23DBEED218EA61B004E2D80 /* earth_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F23DBEE8218EA61B004E2D80 /* earth_icon.svg */; };
+		F23DBEEE218EA61B004E2D80 /* air_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F23DBEE9218EA61B004E2D80 /* air_icon.svg */; };
+		F23DBEEF218EA61B004E2D80 /* fire_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F23DBEEA218EA61B004E2D80 /* fire_icon.svg */; };
+		F23DBEF0218EA61B004E2D80 /* electricity_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F23DBEEB218EA61B004E2D80 /* electricity_icon.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +50,15 @@
 		6E2F3DD8218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DDD218E46DA00B092A2 /* MagicHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2F3DE8218E46DA00B092A2 /* MagicHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2F3DFA218E492C00B092A2 /* alexImages1024 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alexImages1024; sourceTree = "<group>"; };
 		6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuilderViewController.swift; sourceTree = "<group>"; };
 		6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
 		6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayBasics.swift; sourceTree = "<group>"; };
 		6E2F3E42218E677F00B092A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		F23DBEE7218EA61B004E2D80 /* water_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = water_icon.svg; path = "../../../art assets/icons/water_icon.svg"; sourceTree = "<group>"; };
+		F23DBEE8218EA61B004E2D80 /* earth_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = earth_icon.svg; path = "../../../art assets/icons/earth_icon.svg"; sourceTree = "<group>"; };
+		F23DBEE9218EA61B004E2D80 /* air_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = air_icon.svg; path = "../../../art assets/icons/air_icon.svg"; sourceTree = "<group>"; };
+		F23DBEEA218EA61B004E2D80 /* fire_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fire_icon.svg; path = "../../../art assets/icons/fire_icon.svg"; sourceTree = "<group>"; };
+		F23DBEEB218EA61B004E2D80 /* electricity_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = electricity_icon.svg; path = "../../../art assets/icons/electricity_icon.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,10 @@
 		6E2F3DCB218E46D900B092A2 /* MagicHacks */ = {
 			isa = PBXGroup;
 			children = (
+				F23DBEE6218EA612004E2D80 /* art assets */,
 				F2323A02218E760800707A19 /* Model */,
 				F2323A01218E75ED00707A19 /* View */,
 				F23239FF218E75A600707A19 /* Controller */,
-				F2323A00218E75CF00707A19 /* art assets */,
 				6E2F3DCC218E46D900B092A2 /* AppDelegate.swift */,
 				6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */,
 				F2323A03218E761D00707A19 /* Supporting Files */,
@@ -118,14 +126,6 @@
 				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		F2323A00218E75CF00707A19 /* art assets */ = {
-			isa = PBXGroup;
-			children = (
-				6E2F3DFA218E492C00B092A2 /* alexImages1024 */,
-			);
-			path = "art assets";
 			sourceTree = "<group>";
 		};
 		F2323A01218E75ED00707A19 /* View */ = {
@@ -152,6 +152,18 @@
 				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F23DBEE6218EA612004E2D80 /* art assets */ = {
+			isa = PBXGroup;
+			children = (
+				F23DBEE9218EA61B004E2D80 /* air_icon.svg */,
+				F23DBEE8218EA61B004E2D80 /* earth_icon.svg */,
+				F23DBEEB218EA61B004E2D80 /* electricity_icon.svg */,
+				F23DBEEA218EA61B004E2D80 /* fire_icon.svg */,
+				F23DBEE7218EA61B004E2D80 /* water_icon.svg */,
+			);
+			path = "art assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */,
-				6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */,
 				6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */,
+				F23DBEEE218EA61B004E2D80 /* air_icon.svg in Resources */,
+				F23DBEF0218EA61B004E2D80 /* electricity_icon.svg in Resources */,
+				F23DBEED218EA61B004E2D80 /* earth_icon.svg in Resources */,
 				6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */,
+				F23DBEEF218EA61B004E2D80 /* fire_icon.svg in Resources */,
+				F23DBEEC218EA61B004E2D80 /* water_icon.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
