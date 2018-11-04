@@ -12,9 +12,46 @@ import UIKit
 enum CreatureType {
     case fire
     case water
-    case lightning
+    case electric
     case earth
     case air
+    case plant
+}
+
+enum StatType {
+    case A
+    case B
+    case C
+}
+
+enum AttributeType {
+    case HP
+    case speed
+    case attack
+    case defense
+    case magic
+}
+
+enum MoveType {
+    
+}
+
+class Stats {    
+    @IBOutlet var statC: UILabel!
+    @IBOutlet var statB: UILabel!
+    @IBOutlet var statA: NSLayoutConstraint!
+}
+
+class Attributes {
+    @IBOutlet var hp: UILabel!
+    @IBOutlet var speed: UILabel!    
+    @IBOutlet var magic: UILabel!
+    @IBOutlet var defense: UILabel!
+    @IBOutlet var attack: UILabel!
+}
+
+class Moves {
+    
 }
 
 class Creature {
