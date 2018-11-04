@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-enum CreatureType {
-    case fire
-    case water
-    case electric
-    case earth
-    case air
-    case plant
+enum CreatureType: Int, CaseIterable {
+    case air = 0
+    case earth = 1
+    case electric = 2
+    case fire = 3
+    case plant = 4
+    case water = 5
 }
 
 enum StatType {
@@ -25,7 +25,7 @@ enum StatType {
 }
 
 enum AttributeType {
-    case HP
+    case health
     case speed
     case attack
     case defense

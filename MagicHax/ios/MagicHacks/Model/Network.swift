@@ -16,7 +16,6 @@ class GameNetwork {
         session = URLSession.shared
     }
     
-    
     func sendTest() {
         print("Starting the TEST")
         let url = URL(string: "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/626-ios-qovub/service/movemaker/incoming_webhook/capthook")!
@@ -32,8 +31,10 @@ class GameNetwork {
     }
     func postTest() {
         print("starting the SEND")
-        let url = URL(string: "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/626-ios-qovub/service/movemaker/incoming_webhook/postTest")!
-        Alamofire.request(url, method: .post, parameters: ["PIIIIIIIKAAAAAAA":"CHUUUUUIUUUUUUUUUUU"]).responseJSON { (response) in
+        let url = URL(string: "https://webhooks.mongodb-stitch.com/api/client/v2.0/app/626-ios-qovub/service/movemaker/incoming_webhook/userLogin")!
+        //var request = URLRequest(url: url)
+        //request.httpBody = try! JSONSerialization.data(withJSONObject: ["SUPER":"HOT"], options: .prettyPrinted)
+        Alamofire.request(url, method: .post, parameters: ["useID":"Pikachu"], encoding: JSONEncoding.default).responseJSON { (response) in
             print("got a ReSpOnSe")
             guard let value = response.result.value as? [String:Any] else {
                 print("BAD BAD")
