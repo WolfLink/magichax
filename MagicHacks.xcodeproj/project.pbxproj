@@ -14,6 +14,11 @@
 		6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */; };
 		6E2F3DE2218E46DA00B092A2 /* MagicHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */; };
 		6E2F3DED218E46DA00B092A2 /* MagicHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */; };
+		6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFA218E492C00B092A2 /* alexImages1024 */; };
+		6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */; };
+		6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */; };
+		6E2F3E3F218E5A9700B092A2 /* GameplayBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */; };
+		6E2F3E43218E677F00B092A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E42218E677F00B092A2 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		6E2F3DE8218E46DA00B092A2 /* MagicHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicHacksUITests.swift; sourceTree = "<group>"; };
 		6E2F3DEE218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E2F3DFA218E492C00B092A2 /* alexImages1024 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alexImages1024; sourceTree = "<group>"; };
+		6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuilderViewController.swift; sourceTree = "<group>"; };
+		6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
+		6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayBasics.swift; sourceTree = "<group>"; };
+		6E2F3E42218E677F00B092A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +107,14 @@
 		6E2F3DCB218E46D900B092A2 /* MagicHacks */ = {
 			isa = PBXGroup;
 			children = (
+				6E2F3DFA218E492C00B092A2 /* alexImages1024 */,
 				6E2F3DCC218E46D900B092A2 /* AppDelegate.swift */,
+				6E2F3E42218E677F00B092A2 /* Network.swift */,
+				6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */,
 				6E2F3DCE218E46D900B092A2 /* ViewController.swift */,
 				6E2F3DD0218E46D900B092A2 /* Main.storyboard */,
+				6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */,
+				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
 				6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */,
 				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
 				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
@@ -230,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */,
+				6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */,
 				6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */,
 				6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E2F3DCF218E46D900B092A2 /* ViewController.swift in Sources */,
+				6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */,
+				6E2F3E43218E677F00B092A2 /* Network.swift in Sources */,
+				6E2F3E3F218E5A9700B092A2 /* GameplayBasics.swift in Sources */,
+				6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */,
 				6E2F3DCD218E46D900B092A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
