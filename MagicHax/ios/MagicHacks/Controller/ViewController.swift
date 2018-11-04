@@ -50,6 +50,33 @@ class ViewController: UIViewController {
     @IBAction func plusMagic(_ sender: Any) {
     }
     
+    @IBAction func typeAAir(_ sender: Any) {
+    }
+    @IBAction func typeAWater(_ sender: Any) {
+    }
+    @IBAction func typeAElectric(_ sender: Any) {
+    }
+    @IBAction func typeAPlant(_ sender: Any) {
+    }
+    
+    @IBAction func typeAEarth(_ sender: Any) {
+    }
+    @IBAction func typeAFire(_ sender: Any) {
+    }
+    
+    @IBAction func typeBAir(_ sender: Any) {
+    }
+    
+    @IBAction func typeBPlant(_ sender: Any) {
+    }
+    @IBAction func typeBElectric(_ sender: Any) {
+    }
+    @IBAction func typeBEarth(_ sender: Any) {
+    }
+    @IBAction func typeBFire(_ sender: Any) {
+    }
+    @IBAction func typeBWater(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

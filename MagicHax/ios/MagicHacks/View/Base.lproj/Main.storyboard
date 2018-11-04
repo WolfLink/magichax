@@ -112,22 +112,37 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqH-NW-4uw">
                                 <rect key="frame" x="194" y="212" width="35" height="30"/>
                                 <state key="normal" title="fire"/>
+                                <connections>
+                                    <action selector="typeAFire:" destination="hLg-xq-uze" eventType="touchUpInside" id="ILU-fP-gnH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhC-Vd-CIK">
                                 <rect key="frame" x="151" y="212" width="35" height="30"/>
                                 <state key="normal" title="water"/>
+                                <connections>
+                                    <action selector="typeAWater:" destination="hLg-xq-uze" eventType="touchUpInside" id="2zT-sk-xMC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejW-Ks-7hl">
                                 <rect key="frame" x="280" y="212" width="35" height="30"/>
                                 <state key="normal" title="electric"/>
+                                <connections>
+                                    <action selector="typeAElectric:" destination="hLg-xq-uze" eventType="touchUpInside" id="iet-5w-eJo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lz-Tv-rB7">
                                 <rect key="frame" x="323" y="212" width="35" height="30"/>
                                 <state key="normal" title="plant"/>
+                                <connections>
+                                    <action selector="typeAPlant:" destination="hLg-xq-uze" eventType="touchUpInside" id="pHp-s0-u1K"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPS-H6-2Ds">
                                 <rect key="frame" x="237" y="212" width="35" height="30"/>
                                 <state key="normal" title="earth"/>
+                                <connections>
+                                    <action selector="typeAEarth:" destination="hLg-xq-uze" eventType="touchUpInside" id="f10-Ct-EXz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59s-Ys-al4">
                                 <rect key="frame" x="20" y="261" width="50" height="20"/>
@@ -360,30 +375,51 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOs-pN-tZX">
                                 <rect key="frame" x="108" y="212" width="35" height="30"/>
                                 <state key="normal" title="air"/>
+                                <connections>
+                                    <action selector="typeAAir:" destination="hLg-xq-uze" eventType="touchUpInside" id="B7V-3S-e5S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Pd-v7Y">
                                 <rect key="frame" x="194" y="256" width="35" height="30"/>
                                 <state key="normal" title="fire"/>
+                                <connections>
+                                    <action selector="typeBFire:" destination="hLg-xq-uze" eventType="touchUpInside" id="ShV-83-e9u"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agp-gu-rpS">
                                 <rect key="frame" x="150.5" y="256" width="35.5" height="30"/>
                                 <state key="normal" title="water"/>
+                                <connections>
+                                    <action selector="typeBWater:" destination="hLg-xq-uze" eventType="touchUpInside" id="1oC-Ak-NDr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UrV-La-OnW">
                                 <rect key="frame" x="280" y="256" width="35.5" height="30"/>
                                 <state key="normal" title="electric"/>
+                                <connections>
+                                    <action selector="typeBElectric:" destination="hLg-xq-uze" eventType="touchUpInside" id="Rog-4r-XSS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qb-S0-CRY">
                                 <rect key="frame" x="323.5" y="256" width="35" height="30"/>
                                 <state key="normal" title="plant"/>
+                                <connections>
+                                    <action selector="typeBPlant:" destination="hLg-xq-uze" eventType="touchUpInside" id="qvb-HJ-mLT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKb-yQ-zdj">
                                 <rect key="frame" x="237.5" y="256" width="35" height="30"/>
                                 <state key="normal" title="earth"/>
+                                <connections>
+                                    <action selector="typeBEarth:" destination="hLg-xq-uze" eventType="touchUpInside" id="D5R-fN-mY2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAx-Ab-Bf0">
                                 <rect key="frame" x="108" y="256" width="35" height="30"/>
                                 <state key="normal" title="air"/>
+                                <connections>
+                                    <action selector="typeBAir:" destination="hLg-xq-uze" eventType="touchUpInside" id="AeQ-u3-6S7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="defense" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FnE-LW-Ux7">
                                 <rect key="frame" x="134" y="487" width="59" height="20"/>
@@ -673,6 +709,8 @@
                             <outlet property="statA" destination="gnl-Js-Pxq" id="kUo-gF-bHI"/>
                             <outlet property="statB" destination="r5j-C2-QzH" id="how-hZ-HPj"/>
                             <outlet property="statC" destination="jcz-De-ZjK" id="g8Z-Gp-SJU"/>
+                            <outlet property="typeA" destination="Eve-Vm-sqh" id="Ka9-pR-GN3"/>
+                            <outlet property="typeB" destination="59s-Ys-al4" id="LM5-FX-Y9g"/>
                         </connections>
                     </view>
                 </viewController>

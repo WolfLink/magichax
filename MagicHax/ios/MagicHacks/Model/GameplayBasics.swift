@@ -60,6 +60,9 @@ class Moves {
 }
 
 class Creature {
+    @IBOutlet var typeA: UILabel!
+    @IBOutlet var typeB: UILabel!
+    
     let types: [CreatureType]
     
     init(types: [CreatureType]) {
