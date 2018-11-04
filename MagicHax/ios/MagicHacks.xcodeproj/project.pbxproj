@@ -12,8 +12,6 @@
 		6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD0218E46D900B092A2 /* Main.storyboard */; };
 		6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */; };
 		6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */; };
-		6E2F3DE2218E46DA00B092A2 /* MagicHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */; };
-		6E2F3DED218E46DA00B092A2 /* MagicHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */; };
 		6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFA218E492C00B092A2 /* alexImages1024 */; };
 		6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */; };
 		6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */; };
@@ -47,11 +45,7 @@
 		6E2F3DD6218E46DA00B092A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E2F3DD8218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DDD218E46DA00B092A2 /* MagicHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicHacksTests.swift; sourceTree = "<group>"; };
-		6E2F3DE3218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DE8218E46DA00B092A2 /* MagicHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicHacksUITests.swift; sourceTree = "<group>"; };
-		6E2F3DEE218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DFA218E492C00B092A2 /* alexImages1024 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alexImages1024; sourceTree = "<group>"; };
 		6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuilderViewController.swift; sourceTree = "<group>"; };
 		6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
@@ -88,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				6E2F3DCB218E46D900B092A2 /* MagicHacks */,
-				6E2F3DE0218E46DA00B092A2 /* MagicHacksTests */,
-				6E2F3DEB218E46DA00B092A2 /* MagicHacksUITests */,
 				6E2F3DCA218E46D900B092A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,37 +99,59 @@
 		6E2F3DCB218E46D900B092A2 /* MagicHacks */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DFA218E492C00B092A2 /* alexImages1024 */,
+				F2323A02218E760800707A19 /* Model */,
+				F2323A01218E75ED00707A19 /* View */,
+				F23239FF218E75A600707A19 /* Controller */,
+				F2323A00218E75CF00707A19 /* art assets */,
 				6E2F3DCC218E46D900B092A2 /* AppDelegate.swift */,
-				6E2F3E42218E677F00B092A2 /* Network.swift */,
-				6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */,
-				6E2F3DCE218E46D900B092A2 /* ViewController.swift */,
-				6E2F3DD0218E46D900B092A2 /* Main.storyboard */,
-				6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */,
-				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
 				6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */,
-				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
-				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
+				F2323A03218E761D00707A19 /* Supporting Files */,
 			);
 			path = MagicHacks;
 			sourceTree = "<group>";
 		};
-		6E2F3DE0218E46DA00B092A2 /* MagicHacksTests */ = {
+		F23239FF218E75A600707A19 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */,
-				6E2F3DE3218E46DA00B092A2 /* Info.plist */,
+				6E2F3DCE218E46D900B092A2 /* ViewController.swift */,
+				6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */,
+				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
 			);
-			path = MagicHacksTests;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		6E2F3DEB218E46DA00B092A2 /* MagicHacksUITests */ = {
+		F2323A00218E75CF00707A19 /* art assets */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */,
-				6E2F3DEE218E46DA00B092A2 /* Info.plist */,
+				6E2F3DFA218E492C00B092A2 /* alexImages1024 */,
 			);
-			path = MagicHacksUITests;
+			path = "art assets";
+			sourceTree = "<group>";
+		};
+		F2323A01218E75ED00707A19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3DD0218E46D900B092A2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2323A02218E760800707A19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3E42218E677F00B092A2 /* Network.swift */,
+				6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2323A03218E761D00707A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
+				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F3DE2218E46DA00B092A2 /* MagicHacksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F3DED218E46DA00B092A2 /* MagicHacksUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
