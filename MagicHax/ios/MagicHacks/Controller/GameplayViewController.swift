@@ -9,11 +9,19 @@
 import UIKit
 
 class GameplayViewController: ViewController {
+    var battle = BattleView(frame: CGRect.zero)
+    let player = GamePlayer()
+    
+    
+    @IBOutlet weak var safeView: UIView?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        battle = BattleView(frame: safeView!.frame)
+        safeView?.isHidden = true
+        battle.delegate = player
+        player.enqueue()
+        self.view.addSubview(battle)
+        self.view.bringSubviewToFront(battle)
     }
     
 

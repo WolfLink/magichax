@@ -12,13 +12,54 @@
 		6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD0218E46D900B092A2 /* Main.storyboard */; };
 		6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */; };
 		6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */; };
-		6E2F3DE2218E46DA00B092A2 /* MagicHacksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */; };
-		6E2F3DED218E46DA00B092A2 /* MagicHacksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */; };
-		6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFA218E492C00B092A2 /* alexImages1024 */; };
 		6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */; };
 		6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */; };
 		6E2F3E3F218E5A9700B092A2 /* GameplayBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */; };
 		6E2F3E43218E677F00B092A2 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F3E42218E677F00B092A2 /* Network.swift */; };
+		6E827422218ED4AF00A26FB9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E827415218ECF3100A26FB9 /* Alamofire.framework */; };
+		6E827423218ED4AF00A26FB9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E827415218ECF3100A26FB9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E82742D218EE53900A26FB9 /* water64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827427218EE53800A26FB9 /* water64.png */; };
+		6E82742E218EE53900A26FB9 /* earth64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827428218EE53900A26FB9 /* earth64.png */; };
+		6E82742F218EE53900A26FB9 /* fire64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827429218EE53900A26FB9 /* fire64.png */; };
+		6E827430218EE53900A26FB9 /* plant64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82742A218EE53900A26FB9 /* plant64.png */; };
+		6E827431218EE53900A26FB9 /* elec64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82742B218EE53900A26FB9 /* elec64.png */; };
+		6E827432218EE53900A26FB9 /* ari64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82742C218EE53900A26FB9 /* ari64.png */; };
+		6E827435218EE65B00A26FB9 /* BuilderControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E827434218EE65B00A26FB9 /* BuilderControls.swift */; };
+		6E82743E218EE85E00A26FB9 /* fire64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827438218EE85E00A26FB9 /* fire64-gray.png */; };
+		6E82743F218EE85E00A26FB9 /* elec64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827439218EE85E00A26FB9 /* elec64-gray.png */; };
+		6E827440218EE85E00A26FB9 /* plant64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82743A218EE85E00A26FB9 /* plant64-gray.png */; };
+		6E827441218EE85E00A26FB9 /* ari64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82743B218EE85E00A26FB9 /* ari64-gray.png */; };
+		6E827443218EE85E00A26FB9 /* water64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82743D218EE85E00A26FB9 /* water64-gray.png */; };
+		6E827445218EE91E00A26FB9 /* earth64-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827444218EE91E00A26FB9 /* earth64-gray.png */; };
+		6E82744A218F38E000A26FB9 /* BattleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E827449218F38E000A26FB9 /* BattleView.m */; };
+		6E82744D218F38FA00A26FB9 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E82744C218F38FA00A26FB9 /* ButtonView.m */; };
+		6E827450218F390600A26FB9 /* Creature.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E82744E218F390600A26FB9 /* Creature.m */; };
+		6E827453218F392100A26FB9 /* HealthBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E827451218F392100A26FB9 /* HealthBar.m */; };
+		6E827456218F392A00A26FB9 /* HealthLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E827455218F392900A26FB9 /* HealthLabel.m */; };
+		6E827459218F394300A26FB9 /* MessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E827457218F394200A26FB9 /* MessageView.m */; };
+		6E82745C218F397500A26FB9 /* BattleMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E82745B218F397500A26FB9 /* BattleMessenger.m */; };
+		6E827464218F3E7000A26FB9 /* GamePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E827463218F3E7000A26FB9 /* GamePlayer.swift */; };
+		6E82747B218F4A2A00A26FB9 /* electricplant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827466218F4A2900A26FB9 /* electricplant.png */; };
+		6E82747C218F4A2A00A26FB9 /* waterelectric.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827467218F4A2900A26FB9 /* waterelectric.png */; };
+		6E82747D218F4A2A00A26FB9 /* electricearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827468218F4A2900A26FB9 /* electricearth.png */; };
+		6E82747E218F4A2A00A26FB9 /* air.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827469218F4A2900A26FB9 /* air.png */; };
+		6E82747F218F4A2A00A26FB9 /* plantair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746A218F4A2900A26FB9 /* plantair.png */; };
+		6E827480218F4A2A00A26FB9 /* fireplant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746B218F4A2900A26FB9 /* fireplant.png */; };
+		6E827481218F4A2A00A26FB9 /* earthplant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746C218F4A2900A26FB9 /* earthplant.png */; };
+		6E827482218F4A2A00A26FB9 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746D218F4A2900A26FB9 /* earth.png */; };
+		6E827483218F4A2A00A26FB9 /* electric.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746E218F4A2900A26FB9 /* electric.png */; };
+		6E827484218F4A2A00A26FB9 /* fireelectric.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82746F218F4A2900A26FB9 /* fireelectric.png */; };
+		6E827485218F4A2A00A26FB9 /* fireearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827470218F4A2900A26FB9 /* fireearth.png */; };
+		6E827486218F4A2A00A26FB9 /* fireair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827471218F4A2900A26FB9 /* fireair.png */; };
+		6E827487218F4A2A00A26FB9 /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827472218F4A2900A26FB9 /* water.png */; };
+		6E827488218F4A2A00A26FB9 /* earthair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827473218F4A2900A26FB9 /* earthair.png */; };
+		6E827489218F4A2A00A26FB9 /* waterplant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827474218F4A2A00A26FB9 /* waterplant.png */; };
+		6E82748A218F4A2A00A26FB9 /* waterair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827475218F4A2A00A26FB9 /* waterair.png */; };
+		6E82748B218F4A2A00A26FB9 /* firewater.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827476218F4A2A00A26FB9 /* firewater.png */; };
+		6E82748C218F4A2A00A26FB9 /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827477218F4A2A00A26FB9 /* plant.png */; };
+		6E82748D218F4A2A00A26FB9 /* waterearth.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827478218F4A2A00A26FB9 /* waterearth.png */; };
+		6E82748E218F4A2A00A26FB9 /* electricair.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E827479218F4A2A00A26FB9 /* electricair.png */; };
+		6E82748F218F4A2A00A26FB9 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E82747A218F4A2A00A26FB9 /* fire.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +77,77 @@
 			remoteGlobalIDString = 6E2F3DC8218E46D900B092A2;
 			remoteInfo = MagicHacks;
 		};
+		6E827414218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		6E827416218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		6E827418218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		6E82741A218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		6E82741C218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		6E82741E218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		6E827420218ECF3100A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		6E827424218ED4AF00A26FB9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E827426218ED4AF00A26FB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E827423218ED4AF00A26FB9 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6E2F3DC9218E46D900B092A2 /* MagicHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,16 +158,63 @@
 		6E2F3DD6218E46DA00B092A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E2F3DD8218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DDD218E46DA00B092A2 /* MagicHacksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicHacksTests.swift; sourceTree = "<group>"; };
-		6E2F3DE3218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E2F3DE8218E46DA00B092A2 /* MagicHacksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicHacksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicHacksUITests.swift; sourceTree = "<group>"; };
-		6E2F3DEE218E46DA00B092A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E2F3DFA218E492C00B092A2 /* alexImages1024 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = alexImages1024; sourceTree = "<group>"; };
 		6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamBuilderViewController.swift; sourceTree = "<group>"; };
 		6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayViewController.swift; sourceTree = "<group>"; };
 		6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayBasics.swift; sourceTree = "<group>"; };
 		6E2F3E42218E677F00B092A2 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		6E827427218EE53800A26FB9 /* water64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = water64.png; sourceTree = "<group>"; };
+		6E827428218EE53900A26FB9 /* earth64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth64.png; sourceTree = "<group>"; };
+		6E827429218EE53900A26FB9 /* fire64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire64.png; sourceTree = "<group>"; };
+		6E82742A218EE53900A26FB9 /* plant64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plant64.png; sourceTree = "<group>"; };
+		6E82742B218EE53900A26FB9 /* elec64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = elec64.png; sourceTree = "<group>"; };
+		6E82742C218EE53900A26FB9 /* ari64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ari64.png; sourceTree = "<group>"; };
+		6E827434218EE65B00A26FB9 /* BuilderControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderControls.swift; sourceTree = "<group>"; };
+		6E827438218EE85E00A26FB9 /* fire64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fire64-gray.png"; path = "../../../../art assets/icons64-gray/fire64-gray.png"; sourceTree = "<group>"; };
+		6E827439218EE85E00A26FB9 /* elec64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "elec64-gray.png"; path = "../../../../art assets/icons64-gray/elec64-gray.png"; sourceTree = "<group>"; };
+		6E82743A218EE85E00A26FB9 /* plant64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "plant64-gray.png"; path = "../../../../art assets/icons64-gray/plant64-gray.png"; sourceTree = "<group>"; };
+		6E82743B218EE85E00A26FB9 /* ari64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ari64-gray.png"; path = "../../../../art assets/icons64-gray/ari64-gray.png"; sourceTree = "<group>"; };
+		6E82743D218EE85E00A26FB9 /* water64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "water64-gray.png"; path = "../../../../art assets/icons64-gray/water64-gray.png"; sourceTree = "<group>"; };
+		6E827444218EE91E00A26FB9 /* earth64-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "earth64-gray.png"; path = "../../../../art assets/icons64-gray/earth64-gray.png"; sourceTree = "<group>"; };
+		6E827447218F38DF00A26FB9 /* MagicHacks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MagicHacks-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E827448218F38E000A26FB9 /* BattleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BattleView.h; path = ../../../../../../PokeWatch/PokeWatch/BattleView.h; sourceTree = "<group>"; };
+		6E827449218F38E000A26FB9 /* BattleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BattleView.m; path = ../../../../../../PokeWatch/PokeWatch/BattleView.m; sourceTree = "<group>"; };
+		6E82744B218F38FA00A26FB9 /* ButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonView.h; sourceTree = "<group>"; };
+		6E82744C218F38FA00A26FB9 /* ButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonView.m; sourceTree = "<group>"; };
+		6E82744E218F390600A26FB9 /* Creature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creature.m; sourceTree = "<group>"; };
+		6E82744F218F390600A26FB9 /* Creature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creature.h; sourceTree = "<group>"; };
+		6E827451218F392100A26FB9 /* HealthBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthBar.m; sourceTree = "<group>"; };
+		6E827452218F392100A26FB9 /* HealthBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthBar.h; sourceTree = "<group>"; };
+		6E827454218F392900A26FB9 /* HealthLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthLabel.h; sourceTree = "<group>"; };
+		6E827455218F392900A26FB9 /* HealthLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthLabel.m; sourceTree = "<group>"; };
+		6E827457218F394200A26FB9 /* MessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageView.m; sourceTree = "<group>"; };
+		6E827458218F394300A26FB9 /* MessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageView.h; sourceTree = "<group>"; };
+		6E82745A218F397400A26FB9 /* BattleMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BattleMessenger.h; sourceTree = "<group>"; };
+		6E82745B218F397500A26FB9 /* BattleMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BattleMessenger.m; sourceTree = "<group>"; };
+		6E82745D218F39CA00A26FB9 /* Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		6E827463218F3E7000A26FB9 /* GamePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayer.swift; sourceTree = "<group>"; };
+		6E827466218F4A2900A26FB9 /* electricplant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricplant.png; path = "../../../../art assets/alexImages1024/electricplant.png"; sourceTree = "<group>"; };
+		6E827467218F4A2900A26FB9 /* waterelectric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waterelectric.png; path = "../../../../art assets/alexImages1024/waterelectric.png"; sourceTree = "<group>"; };
+		6E827468218F4A2900A26FB9 /* electricearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricearth.png; path = "../../../../art assets/alexImages1024/electricearth.png"; sourceTree = "<group>"; };
+		6E827469218F4A2900A26FB9 /* air.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = air.png; path = "../../../../art assets/alexImages1024/air.png"; sourceTree = "<group>"; };
+		6E82746A218F4A2900A26FB9 /* plantair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plantair.png; path = "../../../../art assets/alexImages1024/plantair.png"; sourceTree = "<group>"; };
+		6E82746B218F4A2900A26FB9 /* fireplant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fireplant.png; path = "../../../../art assets/alexImages1024/fireplant.png"; sourceTree = "<group>"; };
+		6E82746C218F4A2900A26FB9 /* earthplant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earthplant.png; path = "../../../../art assets/alexImages1024/earthplant.png"; sourceTree = "<group>"; };
+		6E82746D218F4A2900A26FB9 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earth.png; path = "../../../../art assets/alexImages1024/earth.png"; sourceTree = "<group>"; };
+		6E82746E218F4A2900A26FB9 /* electric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electric.png; path = "../../../../art assets/alexImages1024/electric.png"; sourceTree = "<group>"; };
+		6E82746F218F4A2900A26FB9 /* fireelectric.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fireelectric.png; path = "../../../../art assets/alexImages1024/fireelectric.png"; sourceTree = "<group>"; };
+		6E827470218F4A2900A26FB9 /* fireearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fireearth.png; path = "../../../../art assets/alexImages1024/fireearth.png"; sourceTree = "<group>"; };
+		6E827471218F4A2900A26FB9 /* fireair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fireair.png; path = "../../../../art assets/alexImages1024/fireair.png"; sourceTree = "<group>"; };
+		6E827472218F4A2900A26FB9 /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = water.png; path = "../../../../art assets/alexImages1024/water.png"; sourceTree = "<group>"; };
+		6E827473218F4A2900A26FB9 /* earthair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = earthair.png; path = "../../../../art assets/alexImages1024/earthair.png"; sourceTree = "<group>"; };
+		6E827474218F4A2A00A26FB9 /* waterplant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waterplant.png; path = "../../../../art assets/alexImages1024/waterplant.png"; sourceTree = "<group>"; };
+		6E827475218F4A2A00A26FB9 /* waterair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waterair.png; path = "../../../../art assets/alexImages1024/waterair.png"; sourceTree = "<group>"; };
+		6E827476218F4A2A00A26FB9 /* firewater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = firewater.png; path = "../../../../art assets/alexImages1024/firewater.png"; sourceTree = "<group>"; };
+		6E827477218F4A2A00A26FB9 /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant.png; path = "../../../../art assets/alexImages1024/plant.png"; sourceTree = "<group>"; };
+		6E827478218F4A2A00A26FB9 /* waterearth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = waterearth.png; path = "../../../../art assets/alexImages1024/waterearth.png"; sourceTree = "<group>"; };
+		6E827479218F4A2A00A26FB9 /* electricair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricair.png; path = "../../../../art assets/alexImages1024/electricair.png"; sourceTree = "<group>"; };
+		6E82747A218F4A2A00A26FB9 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fire.png; path = "../../../../art assets/alexImages1024/fire.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +222,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E827422218ED4AF00A26FB9 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				6E2F3DCB218E46D900B092A2 /* MagicHacks */,
-				6E2F3DE0218E46DA00B092A2 /* MagicHacksTests */,
-				6E2F3DEB218E46DA00B092A2 /* MagicHacksUITests */,
 				6E2F3DCA218E46D900B092A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,37 +264,164 @@
 		6E2F3DCB218E46D900B092A2 /* MagicHacks */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DFA218E492C00B092A2 /* alexImages1024 */,
+				6E827433218EE63100A26FB9 /* GUI */,
+				F23DBEE6218EA612004E2D80 /* art assets */,
+				F2323A02218E760800707A19 /* Model */,
+				F2323A01218E75ED00707A19 /* View */,
+				F23239FF218E75A600707A19 /* Controller */,
 				6E2F3DCC218E46D900B092A2 /* AppDelegate.swift */,
-				6E2F3E42218E677F00B092A2 /* Network.swift */,
-				6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */,
-				6E2F3DCE218E46D900B092A2 /* ViewController.swift */,
-				6E2F3DD0218E46D900B092A2 /* Main.storyboard */,
-				6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */,
-				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
 				6E2F3DD3218E46DA00B092A2 /* Assets.xcassets */,
-				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
-				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
+				F2323A03218E761D00707A19 /* Supporting Files */,
 			);
 			path = MagicHacks;
 			sourceTree = "<group>";
 		};
-		6E2F3DE0218E46DA00B092A2 /* MagicHacksTests */ = {
+		6E82740A218ECF3100A26FB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DE1218E46DA00B092A2 /* MagicHacksTests.swift */,
-				6E2F3DE3218E46DA00B092A2 /* Info.plist */,
+				6E827415218ECF3100A26FB9 /* Alamofire.framework */,
+				6E827417218ECF3100A26FB9 /* Alamofire iOS Tests.xctest */,
+				6E827419218ECF3100A26FB9 /* Alamofire.framework */,
+				6E82741B218ECF3100A26FB9 /* Alamofire macOS Tests.xctest */,
+				6E82741D218ECF3100A26FB9 /* Alamofire.framework */,
+				6E82741F218ECF3100A26FB9 /* Alamofire tvOS Tests.xctest */,
+				6E827421218ECF3100A26FB9 /* Alamofire.framework */,
 			);
-			path = MagicHacksTests;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		6E2F3DEB218E46DA00B092A2 /* MagicHacksUITests */ = {
+		6E827433218EE63100A26FB9 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
-				6E2F3DEC218E46DA00B092A2 /* MagicHacksUITests.swift */,
-				6E2F3DEE218E46DA00B092A2 /* Info.plist */,
+				6E827446218F035400A26FB9 /* Borrowed Battle GUI */,
+				6E827434218EE65B00A26FB9 /* BuilderControls.swift */,
 			);
-			path = MagicHacksUITests;
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		6E827436218EE83F00A26FB9 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				6E82742C218EE53900A26FB9 /* ari64.png */,
+				6E827428218EE53900A26FB9 /* earth64.png */,
+				6E82742B218EE53900A26FB9 /* elec64.png */,
+				6E827429218EE53900A26FB9 /* fire64.png */,
+				6E82742A218EE53900A26FB9 /* plant64.png */,
+				6E827427218EE53800A26FB9 /* water64.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		6E827437218EE84900A26FB9 /* icons-gray */ = {
+			isa = PBXGroup;
+			children = (
+				6E82743B218EE85E00A26FB9 /* ari64-gray.png */,
+				6E827444218EE91E00A26FB9 /* earth64-gray.png */,
+				6E827439218EE85E00A26FB9 /* elec64-gray.png */,
+				6E827438218EE85E00A26FB9 /* fire64-gray.png */,
+				6E82743A218EE85E00A26FB9 /* plant64-gray.png */,
+				6E82743D218EE85E00A26FB9 /* water64-gray.png */,
+			);
+			path = "icons-gray";
+			sourceTree = "<group>";
+		};
+		6E827446218F035400A26FB9 /* Borrowed Battle GUI */ = {
+			isa = PBXGroup;
+			children = (
+				6E82745D218F39CA00A26FB9 /* Types.h */,
+				6E827448218F38E000A26FB9 /* BattleView.h */,
+				6E827449218F38E000A26FB9 /* BattleView.m */,
+				6E82745A218F397400A26FB9 /* BattleMessenger.h */,
+				6E82745B218F397500A26FB9 /* BattleMessenger.m */,
+				6E82744B218F38FA00A26FB9 /* ButtonView.h */,
+				6E82744C218F38FA00A26FB9 /* ButtonView.m */,
+				6E82744F218F390600A26FB9 /* Creature.h */,
+				6E82744E218F390600A26FB9 /* Creature.m */,
+				6E827452218F392100A26FB9 /* HealthBar.h */,
+				6E827451218F392100A26FB9 /* HealthBar.m */,
+				6E827454218F392900A26FB9 /* HealthLabel.h */,
+				6E827455218F392900A26FB9 /* HealthLabel.m */,
+				6E827458218F394300A26FB9 /* MessageView.h */,
+				6E827457218F394200A26FB9 /* MessageView.m */,
+				6E827447218F38DF00A26FB9 /* MagicHacks-Bridging-Header.h */,
+			);
+			path = "Borrowed Battle GUI";
+			sourceTree = "<group>";
+		};
+		6E827465218F4A0700A26FB9 /* creatures */ = {
+			isa = PBXGroup;
+			children = (
+				6E827469218F4A2900A26FB9 /* air.png */,
+				6E82746D218F4A2900A26FB9 /* earth.png */,
+				6E827473218F4A2900A26FB9 /* earthair.png */,
+				6E82746C218F4A2900A26FB9 /* earthplant.png */,
+				6E82746E218F4A2900A26FB9 /* electric.png */,
+				6E827479218F4A2A00A26FB9 /* electricair.png */,
+				6E827468218F4A2900A26FB9 /* electricearth.png */,
+				6E827466218F4A2900A26FB9 /* electricplant.png */,
+				6E82747A218F4A2A00A26FB9 /* fire.png */,
+				6E827471218F4A2900A26FB9 /* fireair.png */,
+				6E827470218F4A2900A26FB9 /* fireearth.png */,
+				6E82746F218F4A2900A26FB9 /* fireelectric.png */,
+				6E82746B218F4A2900A26FB9 /* fireplant.png */,
+				6E827476218F4A2A00A26FB9 /* firewater.png */,
+				6E827477218F4A2A00A26FB9 /* plant.png */,
+				6E82746A218F4A2900A26FB9 /* plantair.png */,
+				6E827472218F4A2900A26FB9 /* water.png */,
+				6E827475218F4A2A00A26FB9 /* waterair.png */,
+				6E827478218F4A2A00A26FB9 /* waterearth.png */,
+				6E827467218F4A2900A26FB9 /* waterelectric.png */,
+				6E827474218F4A2A00A26FB9 /* waterplant.png */,
+			);
+			path = creatures;
+			sourceTree = "<group>";
+		};
+		F23239FF218E75A600707A19 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3DCE218E46D900B092A2 /* ViewController.swift */,
+				6E2F3DFC218E5A1500B092A2 /* TeamBuilderViewController.swift */,
+				6E2F3E38218E5A3D00B092A2 /* GameplayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F2323A01218E75ED00707A19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3DD0218E46D900B092A2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2323A02218E760800707A19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E827463218F3E7000A26FB9 /* GamePlayer.swift */,
+				6E2F3E42218E677F00B092A2 /* Network.swift */,
+				6E2F3E3E218E5A9700B092A2 /* GameplayBasics.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2323A03218E761D00707A19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E2F3DD8218E46DA00B092A2 /* Info.plist */,
+				6E2F3DD5218E46DA00B092A2 /* LaunchScreen.storyboard */,
+				6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F23DBEE6218EA612004E2D80 /* art assets */ = {
+			isa = PBXGroup;
+			children = (
+				6E827465218F4A0700A26FB9 /* creatures */,
+				6E827437218EE84900A26FB9 /* icons-gray */,
+				6E827436218EE83F00A26FB9 /* icons */,
+			);
+			path = "art assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +434,12 @@
 				6E2F3DC5218E46D900B092A2 /* Sources */,
 				6E2F3DC6218E46D900B092A2 /* Frameworks */,
 				6E2F3DC7218E46D900B092A2 /* Resources */,
+				6E827426218ED4AF00A26FB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E827425218ED4AF00A26FB9 /* PBXTargetDependency */,
 			);
 			name = MagicHacks;
 			productName = MagicHacks;
@@ -208,6 +494,7 @@
 				TargetAttributes = {
 					6E2F3DC8218E46D900B092A2 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					6E2F3DDC218E46DA00B092A2 = {
 						CreatedOnToolsVersion = 10.1;
@@ -230,6 +517,12 @@
 			mainGroup = 6E2F3DC0218E46D900B092A2;
 			productRefGroup = 6E2F3DCA218E46D900B092A2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E82740A218ECF3100A26FB9 /* Products */;
+					ProjectRef = 6E827409218ECF3100A26FB9 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6E2F3DC8218E46D900B092A2 /* MagicHacks */,
@@ -239,15 +532,99 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		6E827415218ECF3100A26FB9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6E827414218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E827417218ECF3100A26FB9 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 6E827416218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E827419218ECF3100A26FB9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6E827418218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E82741B218ECF3100A26FB9 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 6E82741A218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E82741D218ECF3100A26FB9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6E82741C218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E82741F218ECF3100A26FB9 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 6E82741E218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6E827421218ECF3100A26FB9 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 6E827420218ECF3100A26FB9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6E2F3DC7218E46D900B092A2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E827484218F4A2A00A26FB9 /* fireelectric.png in Resources */,
+				6E82747C218F4A2A00A26FB9 /* waterelectric.png in Resources */,
+				6E827440218EE85E00A26FB9 /* plant64-gray.png in Resources */,
+				6E82743E218EE85E00A26FB9 /* fire64-gray.png in Resources */,
+				6E827431218EE53900A26FB9 /* elec64.png in Resources */,
+				6E827445218EE91E00A26FB9 /* earth64-gray.png in Resources */,
+				6E82748A218F4A2A00A26FB9 /* waterair.png in Resources */,
+				6E82747D218F4A2A00A26FB9 /* electricearth.png in Resources */,
 				6E2F3DD7218E46DA00B092A2 /* LaunchScreen.storyboard in Resources */,
-				6E2F3DFB218E492D00B092A2 /* alexImages1024 in Resources */,
+				6E82748B218F4A2A00A26FB9 /* firewater.png in Resources */,
+				6E827485218F4A2A00A26FB9 /* fireearth.png in Resources */,
+				6E82742F218EE53900A26FB9 /* fire64.png in Resources */,
+				6E827443218EE85E00A26FB9 /* water64-gray.png in Resources */,
+				6E82742E218EE53900A26FB9 /* earth64.png in Resources */,
+				6E827483218F4A2A00A26FB9 /* electric.png in Resources */,
+				6E82747F218F4A2A00A26FB9 /* plantair.png in Resources */,
+				6E82743F218EE85E00A26FB9 /* elec64-gray.png in Resources */,
+				6E827482218F4A2A00A26FB9 /* earth.png in Resources */,
+				6E827432218EE53900A26FB9 /* ari64.png in Resources */,
 				6E2F3DD4218E46DA00B092A2 /* Assets.xcassets in Resources */,
+				6E827481218F4A2A00A26FB9 /* earthplant.png in Resources */,
+				6E827486218F4A2A00A26FB9 /* fireair.png in Resources */,
+				6E82747E218F4A2A00A26FB9 /* air.png in Resources */,
+				6E827430218EE53900A26FB9 /* plant64.png in Resources */,
+				6E82748E218F4A2A00A26FB9 /* electricair.png in Resources */,
 				6E2F3DD2218E46D900B092A2 /* Main.storyboard in Resources */,
+				6E827480218F4A2A00A26FB9 /* fireplant.png in Resources */,
+				6E82748C218F4A2A00A26FB9 /* plant.png in Resources */,
+				6E827441218EE85E00A26FB9 /* ari64-gray.png in Resources */,
+				6E82748F218F4A2A00A26FB9 /* fire.png in Resources */,
+				6E82748D218F4A2A00A26FB9 /* waterearth.png in Resources */,
+				6E827489218F4A2A00A26FB9 /* waterplant.png in Resources */,
+				6E82747B218F4A2A00A26FB9 /* electricplant.png in Resources */,
+				6E82742D218EE53900A26FB9 /* water64.png in Resources */,
+				6E827488218F4A2A00A26FB9 /* earthair.png in Resources */,
+				6E827487218F4A2A00A26FB9 /* water.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +651,18 @@
 			files = (
 				6E2F3DCF218E46D900B092A2 /* ViewController.swift in Sources */,
 				6E2F3DFD218E5A1500B092A2 /* TeamBuilderViewController.swift in Sources */,
+				6E827464218F3E7000A26FB9 /* GamePlayer.swift in Sources */,
 				6E2F3E43218E677F00B092A2 /* Network.swift in Sources */,
 				6E2F3E3F218E5A9700B092A2 /* GameplayBasics.swift in Sources */,
+				6E827459218F394300A26FB9 /* MessageView.m in Sources */,
+				6E827450218F390600A26FB9 /* Creature.m in Sources */,
+				6E827453218F392100A26FB9 /* HealthBar.m in Sources */,
+				6E827435218EE65B00A26FB9 /* BuilderControls.swift in Sources */,
 				6E2F3E39218E5A3D00B092A2 /* GameplayViewController.swift in Sources */,
+				6E82745C218F397500A26FB9 /* BattleMessenger.m in Sources */,
+				6E82744A218F38E000A26FB9 /* BattleView.m in Sources */,
+				6E82744D218F38FA00A26FB9 /* ButtonView.m in Sources */,
+				6E827456218F392A00A26FB9 /* HealthLabel.m in Sources */,
 				6E2F3DCD218E46D900B092A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +671,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F3DE2218E46DA00B092A2 /* MagicHacksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +678,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F3DED218E46DA00B092A2 /* MagicHacksUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +693,11 @@
 			isa = PBXTargetDependency;
 			target = 6E2F3DC8218E46D900B092A2 /* MagicHacks */;
 			targetProxy = 6E2F3DE9218E46DA00B092A2 /* PBXContainerItemProxy */;
+		};
+		6E827425218ED4AF00A26FB9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 6E827424218ED4AF00A26FB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -451,16 +840,20 @@
 		6E2F3DF2218E46DA00B092A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228X6FPGAD;
-				INFOPLIST_FILE = MagicHacks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MagicHacks/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = marcdavis.MagicHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicHacks/GUI/Borrowed Battle GUI/MagicHacks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -469,16 +862,19 @@
 		6E2F3DF3218E46DA00B092A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228X6FPGAD;
-				INFOPLIST_FILE = MagicHacks/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MagicHacks/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = marcdavis.MagicHacks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MagicHacks/GUI/Borrowed Battle GUI/MagicHacks-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
