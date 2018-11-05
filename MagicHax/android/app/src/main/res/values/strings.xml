@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MagicHacks</string>
+    <string name="api_hook">https://webhooks.mongodb-stitch.com/api/client/v2.0/app/626-ios-qovub/service/movemaker/incoming_webhook/%s</string>
+                            https://webhooks.mongodb-stitch.com/api/client/v2.0/app/626-ios-qovub/service/movemaker/incoming_webhook/postTest
 </resources>
