@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "336178224146",
+    "firebase_url": "https://project-632391566932873920.firebaseio.com",
+    "project_id": "project-632391566932873920",
+    "storage_bucket": "project-632391566932873920.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336178224146:android:0abf4a04efd462b1",
+        "android_client_info": {
+          "package_name": "me.nathanp.magiccreatures"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336178224146-4o36kaeu4ghuun0d39uknhs73nlc7r72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magiccreatures",
+            "certificate_hash": "bea22fa5da1681352150f8edddacc032d2fa61e9"
+          }
+        },
+        {
+          "client_id": "336178224146-gtkjjdufh8nu3dhphf6efrv6ras9jgm4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magiccreatures",
+            "certificate_hash": "35793592b32b12ab7e1471ff52223f70f91ada5a"
+          }
+        },
+        {
+          "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB35iZsgw9SsDqmPociqat-FEGgHLbxPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336178224146:android:a48914b1f54c74c7",
+        "android_client_info": {
+          "package_name": "me.nathanp.magichacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336178224146-o98lqcheag8lt5rph1nu25j2emqp8ggh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magichacks",
+            "certificate_hash": "35793592b32b12ab7e1471ff52223f70f91ada5a"
+          }
+        },
+        {
+          "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBB35iZsgw9SsDqmPociqat-FEGgHLbxPk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

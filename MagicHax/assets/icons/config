@@ -1,0 +1,8 @@
+"plugins": [
+    {
+        "convertPathData": {
+            "leadingZero": false,
+            "floatPrecision": 2
+         }
+    }
+]
