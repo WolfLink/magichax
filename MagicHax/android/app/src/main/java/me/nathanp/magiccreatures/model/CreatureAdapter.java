@@ -1,6 +1,5 @@
 package me.nathanp.magiccreatures.model;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,7 +16,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import me.nathanp.magiccreatures.R;
 
 public class CreatureAdapter extends RecyclerView.Adapter<CreatureAdapter.CreatureHolder> {
+
+    public interface OnCreatureSelected {
+        void onSelected(Creature creature);
+    }
+
     private List<Creature> creatures = new ArrayList<>();
+    private OnCreatureSelected listener;
+
+    public CreatureAdapter(OnCreatureSelected listener) {
+        this.listener = listener;
+    }
 
     @NonNull
     @Override
@@ -30,11 +39,7 @@ public class CreatureAdapter extends RecyclerView.Adapter<CreatureAdapter.Creatu
     @Override
     public void onBindViewHolder(@NonNull CreatureHolder holder, int position) {
         Creature currentCreature = creatures.get(position);
-        Glide.with(holder.imageView.getContext())
-            .load(currentCreature.getDrawableId())
-            .into(holder.imageView);
-        holder.textViewName.setText(currentCreature.getName());
-        holder.textViewStats.setText(currentCreature.getStatSummary());
+        holder.bind(currentCreature);
     }
 
     @Override
@@ -43,16 +48,7 @@ public class CreatureAdapter extends RecyclerView.Adapter<CreatureAdapter.Creatu
     }
 
     public void setCreatures(List<Creature> creatures) {
-        Log.d("CreatureAdapter", "Setting creatures");
         this.creatures = creatures;
-        notifyDataSetChanged();
-    }
-
-    public void setCreatures(Creature.Creatures creatures) {
-        this.creatures.clear();
-        this.creatures.add(creatures.c1);
-        this.creatures.add(creatures.c2);
-        this.creatures.add(creatures.c3);
         notifyDataSetChanged();
     }
 
@@ -61,11 +57,27 @@ public class CreatureAdapter extends RecyclerView.Adapter<CreatureAdapter.Creatu
         private TextView textViewName;
         private TextView textViewStats;
 
-        public CreatureHolder(View view) {
+        CreatureHolder(View view) {
             super(view);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Creature creature = (Creature)v.getTag();
+                    listener.onSelected(creature);
+                }
+            });
             imageView = view.findViewById(R.id.creature_item_image);
             textViewName = view.findViewById(R.id.creature_item_name);
             textViewStats = view.findViewById(R.id.creature_item_stats);
+        }
+
+        void bind(Creature creature) {
+            itemView.setTag(creature);
+            Glide.with(imageView.getContext())
+                    .load(creature.getDrawableId())
+                    .into(imageView);
+            textViewName.setText(creature.getName());
+            textViewStats.setText(creature.getStatSummary());
         }
     }
 }

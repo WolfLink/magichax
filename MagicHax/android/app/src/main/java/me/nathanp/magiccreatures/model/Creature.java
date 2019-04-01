@@ -19,6 +19,11 @@ public class Creature {
         public Creature c3;
     }
 
+    public static Creature fromJson(String json) {
+        Gson gson = new Gson();
+        return gson.fromJson(json, Creature.class);
+    }
+
     @PrimaryKey(autoGenerate = true)
     private int id;
 

@@ -18,8 +18,6 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
@@ -32,12 +30,12 @@ import me.nathanp.magiccreatures.R;
 import me.nathanp.magiccreatures.viewmodel.CreatureViewModel;
 
 public class MainMenuActivity extends AppCompatActivity {
-    private static final String LOG_TAG = "GameActivity";
+    private static final String TAG = "GameActivity";
+    public static final int CREATURE_EDIT_REQUEST_CODE = 1;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
     FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
     DatabaseReference mCurrentGameRef;
-    DrawerLayout mDrawerLayout;
     BottomAppBar bottomAppBar;
 
     private CreatureViewModel creatureViewModel;
@@ -84,12 +82,18 @@ public class MainMenuActivity extends AppCompatActivity {
         recyclerView.setItemViewCacheSize(20);
         recyclerView.setDrawingCacheEnabled(true);
 
-        final CreatureAdapter adapter = new CreatureAdapter();
+        final CreatureAdapter adapter = new CreatureAdapter(new CreatureAdapter.OnCreatureSelected() {
+            @Override
+            public void onSelected(Creature creature) {
+                Log.d(TAG, "onSelected: " + creature.toJson());
+                startBuilderActivity(creature);
+            }
+        });
         recyclerView.setAdapter(adapter);
 
         creatureViewModel = ViewModelProviders.of(this).get(CreatureViewModel.class);
         LiveData<List<Creature>> creaturesLiveData = creatureViewModel.getAllCreatures();
-        Log.w(LOG_TAG, creaturesLiveData.toString());
+        Log.w(TAG, creaturesLiveData.toString());
         creatureViewModel.getAllCreatures().observe(this, new Observer<List<Creature>>() {
             @Override
             public void onChanged(List<Creature> creatures) {
@@ -107,10 +111,15 @@ public class MainMenuActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d(TAG, "onOptionsItemSelected: " + item.getItemId());
         switch (item.getItemId()) {
             case android.R.id.home:
-                mDrawerLayout.openDrawer(GravityCompat.START);
+//                mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
+            case R.id.bottom_add:
+                startBuilderActivity(null);
+                return true;
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -131,9 +140,18 @@ public class MainMenuActivity extends AppCompatActivity {
         finish();
     }
 
-    private void gotoBuilderActivity() {
+    private void startBuilderActivity(Creature selectedCreature) {
         Intent builderActivityIntent = new Intent(this, BuilderActivity.class);
-        startActivity(builderActivityIntent);
-        finish();
+        if (selectedCreature != null) {
+            builderActivityIntent.putExtra("creature", selectedCreature.toJson());
+        }
+        startActivityForResult(builderActivityIntent, CREATURE_EDIT_REQUEST_CODE);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK && requestCode == CREATURE_EDIT_REQUEST_CODE) {
+
+        }
     }
 }
