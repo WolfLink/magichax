@@ -1,14 +1,12 @@
 package me.nathanp.magiccreatures.model;
 
-import android.util.Log;
-
 import java.util.List;
 
 import androidx.lifecycle.LiveData;
 
 public class CreatureRemoteDao {
 
-    private static final String LOG_TAG = "CreatureRemoteDao";
+    private static final String TAG = "CreatureRemoteDao";
     CreatureRemoteDatabase remoteDatabase;
     LiveData<List<Creature>> creaturesLiveData;
 

@@ -30,6 +30,7 @@ public class Creature {
     private String name;
     private int active;
     private ArrayList<String> cards;
+
     private int type1;
     private int type2;
     private int hp;
@@ -42,6 +43,38 @@ public class Creature {
     private int atkMax;
     private int mag;
     private int magMax;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setType1(int type1) {
+        this.type1 = type1;
+    }
+
+    public void setType2(int type2) {
+        this.type2 = type2;
+    }
+
+    public void setHpMax(int hpMax) {
+        this.hpMax = hpMax;
+    }
+
+    public void setSpdMax(int spdMax) {
+        this.spdMax = spdMax;
+    }
+
+    public void setDefMax(int defMax) {
+        this.defMax = defMax;
+    }
+
+    public void setAtkMax(int atkMax) {
+        this.atkMax = atkMax;
+    }
+
+    public void setMagMax(int magMax) {
+        this.magMax = magMax;
+    }
 
     public int getId() {
         return id;
@@ -108,7 +141,7 @@ public class Creature {
     }
 
     @Ignore
-    Creature() {}
+    public Creature() {}
 
     public Creature(String name, int active, ArrayList<String> cards, int type1, int type2, int hp, int hpMax, int spd, int spdMax, int def, int defMax, int atk, int atkMax, int mag, int magMax) {
         this.name = name;

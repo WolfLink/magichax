@@ -2,10 +2,7 @@ package me.nathanp.magiccreatures.view;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 
@@ -27,9 +24,7 @@ public class BuilderActivity extends AppCompatActivity implements View.OnClickLi
     private RadioGroup mGroup1;
     private RadioGroup mGroup2;
     private ImageView mCreatureImage;
-
-    private int mType1 = 0;
-    private int mType2 = 0;
+    private Creature mCreature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,28 +51,26 @@ public class BuilderActivity extends AppCompatActivity implements View.OnClickLi
         mGroup1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                mType1 = getTypeFromRadioId(checkedId);
-                changeCreatureImage();
+                mCreature.setType1(getTypeFromRadioId(checkedId));
+                refreshUI();
             }
         });
 
         mGroup2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                mType2 = getTypeFromRadioId(checkedId);
-                changeCreatureImage();
+                mCreature.setType2(getTypeFromRadioId(checkedId));
+                refreshUI();
             }
         });
 
         if (getIntent().hasExtra("creature")) {
             String creatureJson = getIntent().getStringExtra("creature");
-            loadFromCreature(Creature.fromJson(creatureJson));
+            mCreature = Creature.fromJson(creatureJson);
+        } else {
+            mCreature = new Creature();
         }
-    }
-
-    private void changeCreatureImage() {
-        int drawableId = CreatureResources.getCreatureResource(mType1, mType2);
-        mCreatureImage.setImageResource(drawableId);
+        refreshUI();
     }
 
     @Override
@@ -115,11 +108,13 @@ public class BuilderActivity extends AppCompatActivity implements View.OnClickLi
         return -1;
     }
 
-    private void loadFromCreature(Creature creature) {
-        mType1 = creature.getType1();
-        mType2 = creature.getType2();
-        mGroup1.check(getRadioIdFromType1(mType1));
-        mGroup2.check(getRadioIdFromType2(mType2));
+    private void refreshUI() {
+        int t1 = mCreature.getType1();
+        int t2 = mCreature.getType2();
+        mGroup1.check(getRadioIdFromType1(t1));
+        mGroup2.check(getRadioIdFromType2(t2));
+        int drawableId = CreatureResources.getCreatureResource(t1, t2);
+        mCreatureImage.setImageResource(drawableId);
     }
 
     void validateAndSubmitCreature(Creature c) {
