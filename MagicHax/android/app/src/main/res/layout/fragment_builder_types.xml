@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.BuilderActivity">
+
+    <RadioGroup
+        android:id="@+id/group1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/fire_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_fire"
+            android:button="@null"
+            android:checked="true" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/water_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_water"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/earth_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_earth"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/air_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_air"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/plant_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_plant"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/electricity_check_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_electricity"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/fire_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_fire"
+            android:button="@null"
+            android:checked="true" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/water_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_water"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/earth_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_earth"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/air_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_air"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/plant_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_plant"
+            android:button="@null" />
+
+        <me.nathanp.magiccreatures.view.ImageRadioButton
+            android:id="@+id/electricity_check_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/radio_margin"
+            android:layout_weight="1"
+            android:background="@drawable/radio_selector_electricity"
+            android:button="@null" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/creature_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/creature_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/creature_fire"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="@+id/group2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/group1"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="300dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

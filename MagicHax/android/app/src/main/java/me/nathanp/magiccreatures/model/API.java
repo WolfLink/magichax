@@ -13,6 +13,7 @@ import com.google.firebase.functions.FirebaseFunctions;
 import com.google.firebase.functions.FirebaseFunctionsException;
 import com.google.firebase.functions.HttpsCallableResult;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import androidx.annotation.NonNull;
@@ -191,6 +192,21 @@ public class API {
         });
     }
 
+    public static void getAvailableCards(Player player, final Then<ArrayList<Card>> then) {
+        final ArrayList<Card> cards = new ArrayList<>();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference cardsRef = database.getReference("cards");
+        for (String card : player.getCards()) {
+            cardsRef.child(card).addListenerForSingleValueEvent(new ValueEventListener<Card>(Card.class) {
+                @Override
+                public void onEvent(Card data) {
+                    cards.add(data);
+                }
+            });
+        }
+        then.ok(cards);
+    }
+
     public static void getCardCosts(final Then<HashMap<String, Integer>> then) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference cardCostRef = database.getReference("cardCosts");
@@ -213,14 +229,14 @@ public class API {
 
     public static void getPlayer(String uid, ValueEventListener listener) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        database.getReference(Paths.getPlayerPath(uid)).addListenerForSingleValueEvent(listener);
+        database.getReference(Paths.getPlayerDocumentPath(uid)).addListenerForSingleValueEvent(listener);
     }
 
     public static void getCreature(final Then<Creature> then) {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             FirebaseDatabase database = FirebaseDatabase.getInstance();
-            database.getReference(Paths.getCreaturesPath(user.getUid())).addListenerForSingleValueEvent(new ValueEventListener<Creature>(Creature.class) {
+            database.getReference(Paths.getPlayerCreaturesCollectionPath(user.getUid())).addListenerForSingleValueEvent(new ValueEventListener<Creature>(Creature.class) {
                 @Override
                 public void onEvent(Creature data) {
                     then.ok(data);
@@ -231,12 +247,12 @@ public class API {
 
     public static void getCurrentGame(String uid, ValueEventListener listener) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        database.getReference(Paths.getPlayerPath(uid)).addListenerForSingleValueEvent(listener);
+        database.getReference(Paths.getPlayerDocumentPath(uid)).addListenerForSingleValueEvent(listener);
     }
 
     public static void setOnCurrentGameChangedListener(String uid, ValueEventListener listener) {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        database.getReference(Paths.getCurrentGamePath(uid)).addValueEventListener(listener);
+        database.getReference(Paths.getPlayerCurrentGamePath(uid)).addValueEventListener(listener);
     }
 
     public static abstract class APICompleteListener<T> implements OnCompleteListener<T> {

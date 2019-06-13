@@ -19,9 +19,10 @@ public class ImageRadioButton extends AppCompatRadioButton {
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int desiredWidth = MeasureSpec.getSize(widthMeasureSpec);
+        int desiredHeight = MeasureSpec.getSize(heightMeasureSpec);
         Drawable drawable = getBackground();
 
         float aspectRatio = (float)drawable.getIntrinsicHeight() / (float)drawable.getIntrinsicWidth();
-        setMeasuredDimension(desiredWidth, (int)(desiredWidth * aspectRatio));
+        setMeasuredDimension((int)(desiredHeight * aspectRatio), desiredHeight);
     }
 }

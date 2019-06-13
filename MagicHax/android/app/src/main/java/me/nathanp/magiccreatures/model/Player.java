@@ -7,7 +7,12 @@ public class Player {
     private String username;
     private String currentGame;
     private boolean online;
+    private List<String> cards;
     Player(){}
+
+    public List<String> getCards() {
+        return cards;
+    }
 
     public String getUsername() {
         return username;

@@ -5,34 +5,17 @@ import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
 
-import androidx.room.Entity;
-import androidx.room.Ignore;
-import androidx.room.PrimaryKey;
-
-@Entity(tableName = "creature_cache_table")
-public class Creature {
-
-    public static class Creatures {
-        Creatures() {}
-        public Creature c1;
-        public Creature c2;
-        public Creature c3;
-    }
+public class Creature extends Types.Typed {
 
     public static Creature fromJson(String json) {
         Gson gson = new Gson();
         return gson.fromJson(json, Creature.class);
     }
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-
     private String name;
     private int active;
     private ArrayList<String> cards;
-
-    private int type1;
-    private int type2;
+    private ArrayList<String> traits;
     private int hp;
     private int hpMax;
     private int spd;
@@ -76,10 +59,6 @@ public class Creature {
         this.magMax = magMax;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public String getName() {
         return name;
     }
@@ -88,16 +67,12 @@ public class Creature {
         return active;
     }
 
+    public ArrayList<String> getTraits() {
+        return traits;
+    }
+
     public ArrayList<String> getCards() {
         return cards;
-    }
-
-    public int getType1() {
-        return type1;
-    }
-
-    public int getType2() {
-        return type2;
     }
 
     public int getHp() {
@@ -140,12 +115,15 @@ public class Creature {
         return magMax;
     }
 
-    @Ignore
-    public Creature() {}
+    public Creature() {
+        this.traits = new ArrayList<>();
+        this.cards = new ArrayList<>();
+    }
 
-    public Creature(String name, int active, ArrayList<String> cards, int type1, int type2, int hp, int hpMax, int spd, int spdMax, int def, int defMax, int atk, int atkMax, int mag, int magMax) {
+    public Creature(String name, int active, ArrayList<String> traits, ArrayList<String> cards, int type1, int type2, int hp, int hpMax, int spd, int spdMax, int def, int defMax, int atk, int atkMax, int mag, int magMax) {
         this.name = name;
         this.active = active;
+        this.traits = traits;
         this.cards = cards;
         this.type1 = type1;
         this.type2 = type2;
@@ -161,16 +139,20 @@ public class Creature {
         this.magMax = magMax;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     void addCard(String card) {
         cards.add(card);
     }
 
     void removeCard(String card) {
         cards.remove(card);
+    }
+
+    void addTrait(String trait) {
+        traits.add(trait);
+    }
+
+    void removeTrait(String trait) {
+        traits.remove(trait);
     }
 
     public int getDrawableId() {
