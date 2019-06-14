@@ -10,6 +10,7 @@ import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -61,11 +62,34 @@ public class MainMenuActivity extends AppCompatActivity {
         recyclerView.setItemViewCacheSize(20);
         recyclerView.setDrawingCacheEnabled(true);
 
-        final CardAdapter adapter = new CardAdapter(new CardAdapter.OnCardSelected() {
+        class CreatureWrapper implements CardAdapter.CardInfo {
+            Creature creature;
+
+            public CreatureWrapper(Creature c) {
+                creature = c;
+            }
             @Override
-            public void onSelected(Creature creature) {
-                Log.d(TAG, "onSelected: " + creature.toJson());
-                startBuilderActivity(creature);
+            public int getDrawableId() {
+                return creature.getDrawableId();
+            }
+
+            @Override
+            public String getName() {
+                return creature.getName();
+            }
+
+            @Override
+            public String getDescription() {
+                return creature.getStatSummary();
+            }
+        }
+
+        final CardAdapter<CreatureWrapper> adapter = new CardAdapter<>(new CardAdapter.onCardSelectedListener<CreatureWrapper>() {
+
+            @Override
+            public void onSelected(CreatureWrapper wrapper) {
+                Log.d(TAG, "onSelected: " + wrapper.creature.toJson());
+                startBuilderActivity(wrapper.creature);
             }
         });
         recyclerView.setAdapter(adapter);
@@ -74,8 +98,12 @@ public class MainMenuActivity extends AppCompatActivity {
         creatureListViewModel.getAllCreatures().observe(this, new Observer<List<Creature>>() {
             @Override
             public void onChanged(List<Creature> creatures) {
+                List<CreatureWrapper> wrappers = new ArrayList<>(creatures.size());
+                for (Creature c : creatures) {
+                    wrappers.add(new CreatureWrapper(c));
+                }
                 // Update view
-                adapter.setThings(creatures);
+                adapter.setThings(wrappers);
             }
         });
     }

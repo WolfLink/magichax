@@ -15,10 +15,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import me.nathanp.magiccreatures.R;
 
-public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Adapter<CardAdapter<T>.CardHolder<T>> {
+public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Adapter<CardAdapter<T>.CardHolder> {
 
-    public interface OnCardSelected<T> {
-        void onSelected(T thing);
+    public interface onCardSelectedListener<O> {
+        void onSelected(O thing);
     }
 
     public interface CardInfo {
@@ -28,22 +28,22 @@ public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Ad
     }
 
     private List<T> things = new ArrayList<>();
-    private OnCardSelected<T> listener;
+    private onCardSelectedListener<T> listener;
 
-    public CardAdapter(OnCardSelected<T> listener) {
+    public CardAdapter(onCardSelectedListener<T> listener) {
         this.listener = listener;
     }
 
     @NonNull
     @Override
-    public CardHolder<T> onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CardHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.card_item, parent, false);
-        return new CardHolder<>(itemView);
+        return new CardHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CardHolder<T> holder, int position) {
+    public void onBindViewHolder(@NonNull CardHolder holder, int position) {
         T thing = things.get(position);
         holder.bind(thing);
     }
@@ -58,7 +58,8 @@ public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Ad
         notifyDataSetChanged();
     }
 
-    class CardHolder<T> extends RecyclerView.ViewHolder {
+    class CardHolder extends RecyclerView.ViewHolder {
+        T myThing;
         private ImageView imageView;
         private TextView textViewName;
         private TextView textViewStats;
@@ -68,8 +69,7 @@ public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Ad
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    T thing = (T)v.getTag();
-                    listener.onSelected(thing);
+                    listener.onSelected(myThing);
                 }
             });
             imageView = view.findViewById(R.id.card_item_image);
@@ -78,12 +78,13 @@ public class CardAdapter<T extends CardAdapter.CardInfo> extends RecyclerView.Ad
         }
 
         void bind(T thing) {
+            myThing = thing;
             itemView.setTag(thing);
             Glide.with(imageView.getContext())
                     .load(thing.getDrawableId())
                     .into(imageView);
-            textViewName.setText(creature.getName());
-            textViewStats.setText(creature.getDescription());
+            textViewName.setText(thing.getName());
+            textViewStats.setText(thing.getDescription());
         }
     }
 }
