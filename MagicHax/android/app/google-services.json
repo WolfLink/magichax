@@ -15,19 +15,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "336178224146-4o36kaeu4ghuun0d39uknhs73nlc7r72.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "me.nathanp.magiccreatures",
-            "certificate_hash": "bea22fa5da1681352150f8edddacc032d2fa61e9"
-          }
-        },
-        {
           "client_id": "336178224146-gtkjjdufh8nu3dhphf6efrv6ras9jgm4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "me.nathanp.magiccreatures",
             "certificate_hash": "35793592b32b12ab7e1471ff52223f70f91ada5a"
+          }
+        },
+        {
+          "client_id": "336178224146-4o36kaeu4ghuun0d39uknhs73nlc7r72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magiccreatures",
+            "certificate_hash": "bea22fa5da1681352150f8edddacc032d2fa61e9"
           }
         },
         {
@@ -41,20 +41,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     },
@@ -66,6 +59,22 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "336178224146-9uuig85vbeoq1hchnmmlq0ekrpsnrk5h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magichacks",
+            "certificate_hash": "1c1fd5234336f7e8f8fe4f8d5ef21f5d1ca941a0"
+          }
+        },
+        {
+          "client_id": "336178224146-upu4c6pb9a0t137ar8qg7qboamk7qgpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.nathanp.magichacks",
+            "certificate_hash": "992f0b7777dea570f357b758212534db812b5ceb"
+          }
+        },
         {
           "client_id": "336178224146-o98lqcheag8lt5rph1nu25j2emqp8ggh.apps.googleusercontent.com",
           "client_type": 1,
@@ -85,20 +94,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "336178224146-fh6gnkt23rccuj5vgq6ncg1k3fjhbcpu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

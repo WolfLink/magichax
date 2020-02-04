@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="trait"
+            type="me.nathanp.magiccreatures.model.Trait" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/trait_item_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingEnd="4dp"
+            app:srcCompat="@{trait.drawableId}"
+            tools:srcCompat="@drawable/circle" />
+    </LinearLayout>
+</layout>
