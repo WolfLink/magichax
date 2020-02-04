@@ -172,26 +172,6 @@ public class API {
         });
     }
 
-    public static void validateAndSubmitCreature(Creature creature, final Then<String> then) {
-        FirebaseFunctions functions = FirebaseFunctions.getInstance();
-        functions.getHttpsCallable("validateAndSubmitCreature").call(creature.toJson())
-                .continueWith(new Continuation<HttpsCallableResult, String>() {
-                    @Override
-                    public String then(Task<HttpsCallableResult> task) throws Exception {
-                        return (String) task.getResult().getData();
-                    }
-                }).addOnCompleteListener(new OnCompleteListener<String>() {
-            @Override
-            public void onComplete(@NonNull Task<String> task) {
-                if (task.isSuccessful()) {
-                    then.ok(task.getResult());
-                } else {
-                    then.cancelled(task.getException().getMessage());
-                }
-            }
-        });
-    }
-
     public static void getAvailableCards(Player player, final Then<ArrayList<Card>> then) {
         final ArrayList<Card> cards = new ArrayList<>();
         FirebaseDatabase database = FirebaseDatabase.getInstance();

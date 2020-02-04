@@ -1,12 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="viewmodel"
+            type="me.nathanp.magiccreatures.viewmodel.CreatureBuilderViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="60dp"
-        android:text="Stats!"
-        android:textAlignment="center"/>
+        android:orientation="vertical">
 
-</LinearLayout>
+        <VerticalSeekBar
+            android:id="@+id/hpSeek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/hpLabel"
+            app:layout_constraintEnd_toStartOf="@+id/spdSeek"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp" />
+
+        <VerticalSeekBar
+            android:id="@+id/spdSeek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/spdLabel"
+            app:layout_constraintEnd_toStartOf="@+id/atkSeek"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/hpSeek"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp" />
+
+        <VerticalSeekBar
+            android:id="@+id/atkSeek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/atkLabel"
+            app:layout_constraintEnd_toStartOf="@+id/defSeek"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/spdSeek"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp" />
+
+        <VerticalSeekBar
+            android:id="@+id/defSeek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/defLabel"
+            app:layout_constraintEnd_toStartOf="@+id/magSeek"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/atkSeek"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp"/>
+
+        <VerticalSeekBar
+            android:id="@+id/magSeek"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/magLabel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/defSeek"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:id="@+id/hpLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/hpSeek"
+            app:layout_constraintStart_toStartOf="@id/hpSeek" />
+
+        <TextView
+            android:id="@+id/spdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPD"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/spdSeek"
+            app:layout_constraintStart_toStartOf="@+id/spdSeek" />
+
+        <TextView
+            android:id="@+id/atkLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ATK"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/atkSeek"
+            app:layout_constraintStart_toStartOf="@+id/atkSeek" />
+
+        <TextView
+            android:id="@+id/defLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/defSeek"
+            app:layout_constraintStart_toStartOf="@+id/defSeek" />
+
+        <TextView
+            android:id="@+id/magLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAG"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/magSeek"
+            app:layout_constraintEnd_toEndOf="@id/magSeek"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
