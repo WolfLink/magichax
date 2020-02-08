@@ -6,9 +6,9 @@ import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import me.nathanp.magiccreatures.model.CardRepository
 import me.nathanp.magiccreatures.model.Creature
-import me.nathanp.magiccreatures.model.Resources.Types.getRadioIdFromType1
-import me.nathanp.magiccreatures.model.Resources.Types.getRadioIdFromType2
-import me.nathanp.magiccreatures.model.Resources.Types.getTypeFromRadioId
+import me.nathanp.magiccreatures.util.Resources.Types.getRadioIdFromType1
+import me.nathanp.magiccreatures.util.Resources.Types.getRadioIdFromType2
+import me.nathanp.magiccreatures.util.Resources.Types.getTypeFromRadioId
 import me.nathanp.magiccreatures.model.Trait
 import me.nathanp.magiccreatures.model.TraitRepository
 

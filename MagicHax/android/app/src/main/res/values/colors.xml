@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#6C1E99</color>
+    <color name="colorPrimaryDark">#43135E</color>
+    <color name="colorAccent">#501AB0</color>
+
+    <color name="firePrimary">#b43831</color>
+    <color name="fireSecondary">#faa93c</color>
+
+    <color name="waterPrimary">#56c1d2</color>
+    <color name="waterSecondary">#befffe</color>
+
+    <color name="earthPrimary">#b7693c</color>
+    <color name="earthSecondary">#894822</color>
+
+    <color name="airPrimary">#bce4ee</color>
+    <color name="airSecondary">#9ab8bf</color>
+
+    <color name="plantPrimary">#77a625</color>
+    <color name="plantSecondary">#91ca2d</color>
+
+    <color name="electricPrimary">#ffcd27</color>
+    <color name="electricSecondary">#ffe284</color>
 </resources>

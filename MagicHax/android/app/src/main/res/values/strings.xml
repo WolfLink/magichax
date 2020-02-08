@@ -3,4 +3,5 @@
     <string name="creature_description">Creature</string>
 
     <string name="card_icon">Card icon</string>
+    <string name="add">Add</string>
 </resources>

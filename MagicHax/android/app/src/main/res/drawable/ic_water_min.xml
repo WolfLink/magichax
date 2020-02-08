@@ -1,0 +1,7 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="200dp" android:height="200dp" android:viewportWidth="400" android:viewportHeight="400">
+    <path android:fillColor="@color/waterPrimary" android:pathData="M 200,200m-200,0a 200,200 0 1,0 400,0a200,200 0 1,0-400,0"/>
+    <path android:fillColor="@color/waterSecondary" android:pathData="M 200 219 m -180 0 a 180 180 0 1 0 360 0 a 180 180 0 1 0 -360 0"/>
+    <path android:fillColor="@color/waterPrimary" android:pathData="M264 230 c -2 -17,-9 -33,-25 -44,53 37,39 139,-34 137 a 73 73 0 0 1 -24 -4 c -20 -8 -35 -28 -39 -49 s 0 -44 8 -64 c 14 -36 42 -68 40 -106 6 19 2 45 -5 64 s -17 37.55-21.15 57.44-3.61 42.46 9 58.56c12.86 16.47 33.09 24.07 53.74 17.55 23.69-7.49 33-18.87 37.17-43.25a88.29 88.29 0 0 0 1.02-22.72z"/>
+    <path android:fillColor="#ffffff" android:pathData="M 190 100 c -30 100 0 0 -37 100 c 0 100 0 150 100 100 c 0 0 0 0 0 -100"/>
+    <path android:fillColor="#fff" android:pathData="M 220 200 a 108 108 0 0 0 20.53 31c1.58 1.67 3.63 3.43 5.89 3 0.82-10.83-3.23-21.64-9.56-30.47-5.2-7.27-15-19.77-24.37-20.68-0.05 4.84 5 11.24 7.07 16.11z"/>
+</vector>

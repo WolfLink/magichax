@@ -29,19 +29,23 @@ class MainMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main_menu)
         setSupportActionBar(binding.bottomAppBar)
+        binding.bottomAppBar.setNavigationOnClickListener {
+            val bottomNavDrawerFragment = BottomNavDrawerFragment()
+            bottomNavDrawerFragment.show(supportFragmentManager, bottomNavDrawerFragment.tag)
+        }
         mAuth = FirebaseAuth.getInstance()
         mAuth.addAuthStateListener {
-            val user = mAuth.currentUser
-            if (user == null) {
-                gotoTitleScreen()
-            } else {
+            mAuth.currentUser?.run {
                 startUserSignInFlow()
+            } ?: run {
+                gotoTitleScreen()
             }
         }
-        with(binding.creatures) {
-            layoutManager = LinearLayoutManager(this@MainMenuActivity)
-            setHasFixedSize(true)
+        binding.creatures.apply {
             setItemViewCacheSize(20)
+            setHasFixedSize(true)
+        }.let {
+            it.layoutManager = LinearLayoutManager(this)
         }
 
         class CreatureWrapper(var creature: Creature) : CardInfo {
@@ -93,6 +97,7 @@ class MainMenuActivity : AppCompatActivity() {
     }
 
     private fun startUserSignInFlow() {}
+
     private fun gotoTitleScreen() {
         val titleScreenIntent = Intent(this, TitleActivity::class.java)
         startActivity(titleScreenIntent)

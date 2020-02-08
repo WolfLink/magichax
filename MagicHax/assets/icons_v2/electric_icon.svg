@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="electric_icon.svg"
+   inkscape:version="1.1-dev (53cefcb, 2020-02-05)"
+   id="svg3166"
+   version="1.1"
+   viewBox="0 0 52.916665 52.916668"
+   height="200"
+   width="200">
+  <defs
+     id="defs3160" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="302"
+     inkscape:window-x="387"
+     inkscape:window-height="900"
+     inkscape:window-width="2359"
+     units="px"
+     showgrid="true"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="107.12152"
+     inkscape:cx="18.390925"
+     inkscape:zoom="2.8"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       id="grid3168"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3163">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <circle
+       r="26.458334"
+       cy="26.458334"
+       cx="26.458334"
+       id="path3170"
+       style="fill:#ffcd27;fill-opacity:1;stroke-width:0.73382" />
+    <circle
+       r="23.8125"
+       cy="29.104166"
+       cx="26.458332"
+       id="path3172"
+       style="fill:#ffe284;fill-opacity:1;stroke-width:0.614835" />
+  </g>
+</svg>

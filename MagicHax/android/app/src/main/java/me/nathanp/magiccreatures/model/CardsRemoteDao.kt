@@ -5,7 +5,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 internal class CardsRemoteDao {
     private val TAG = javaClass.simpleName
-    private val liveCardCollection = LiveFirestoreCollection(FirebaseFirestore.getInstance().collection(Paths.getCardCollectionPath()), Card::class.java)
+    private val liveCardCollection = LiveFirestoreCollection(FirebaseFirestore.getInstance().collection(Paths.cardCollectionPath), Card::class.java)
     val allCards: LiveData<List<Card>>
         get() = liveCardCollection
 }

@@ -1,6 +1,6 @@
 package me.nathanp.magiccreatures.model
 
-import me.nathanp.magiccreatures.model.Resources.Types.getTypesDrawable
+import me.nathanp.magiccreatures.util.Resources.Types.getTypesDrawable
 import me.nathanp.magiccreatures.model.Types.Typed
 
 data class Trait(

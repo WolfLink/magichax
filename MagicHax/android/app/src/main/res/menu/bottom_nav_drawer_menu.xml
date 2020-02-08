@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav1"
+            android:icon="@drawable/ic_fire_icon"
+            android:title="Fire Dummy" />
+        <item
+            android:id="@+id/nav2"
+            android:icon="@drawable/ic_water_icon"
+            android:title="Drink water" />
+        <item
+            android:id="@+id/nav3"
+            android:icon="@drawable/ic_earth_icon"
+            android:title="Stay rock solid" />
+        <item
+            android:id="@+id/nav4"
+            android:icon="@drawable/ic_air_icon"
+            android:title="Ride like the wind" />
+        <item
+            android:id="@+id/nav5"
+            android:icon="@drawable/ic_plant_icon"
+            android:title="Hug trees" />
+        <item
+            android:id="@+id/nav6"
+            android:icon="@drawable/ic_electric_icon"
+            android:title="Electrifying!" />
+        <item
+            android:id="@+id/sign_out_option"
+            android:icon="@drawable/ic_plant_grey"
+            android:title="Sign Out" />
+    </group>
+</menu>

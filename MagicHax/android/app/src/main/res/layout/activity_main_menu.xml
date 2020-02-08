@@ -35,7 +35,7 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
-            style="@style/Widget.MaterialComponents.FloatingActionButton"
+            style="@style/FloatingPlayButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:elevation="4dp"

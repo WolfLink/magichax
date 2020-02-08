@@ -1,5 +1,6 @@
 package me.nathanp.magiccreatures.model
 
+import me.nathanp.magiccreatures.util.Resources
 import java.io.Serializable
 import java.util.ArrayList
 
